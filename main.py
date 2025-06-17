@@ -7,6 +7,7 @@ from PyQt5.QtCore import Qt, QPropertyAnimation, QRect
 import requests as req
 
 
+
 class ZoomButton(QPushButton):
     def __init__(self, *args, **kwargs):
         super(ZoomButton, self).__init__(*args, **kwargs)
@@ -142,7 +143,7 @@ class Window(QWidget):
         self.text_temp_likes.resize(500, 70)
         self.text_temp_likes.move(0, 325)
 
-        #Основная иконка
+        #Иконка
         self.main_label_image = QLabel(self)
         main_image = QPixmap('icon')
         self.main_label_image.setAlignment(Qt.AlignCenter)
